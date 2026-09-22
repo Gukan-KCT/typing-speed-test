@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title-area">
+        <h1>Typing speed test</h1>
+    </div>
+
+    <div class="difficulty-area">
+        <ul>
+            <li><button id="easy-btn">Easy</button></li>
+            <li><button id="medium-btn">Medium</button></li>
+            <li><button id="hard-btn">Hard</button></li>
+        </ul>
+    </div>
+    <div class="timer-area">
+        <h2 id="seconds"></h2>
+        <h2>Seconds</h2>
+
+        <select id="timer-select">
+            <option value="15">15 seconds</option>
+            <option value="30">30 seconds</option>
+            <option value="60" selected>60 seconds</option>
+            <option value="120">120 seconds</option>
+        </select>
+    </div>
+
+    <div class="display-area">
+
+        <p class="display-content"></p>
+
+    </div>
+
+    <div class="input-area">
+
+        <input type="text" id="text-box" placeholder="Select a timer before typing...">
+        <p id="input-message">Select a timer to start typing.</p>
+
+    </div>
+
+    <br><br>
+    <div class="live-stats-area">
+
+        <p>WPM:</p>
+        <p id="live-wpm"></p>
+
+        <p>Accuracy:</p>
+        <p id="live-accuracy"></p>
+
+        <p>Mistakes: </p>
+        <p id="live-mistakes"></p>
+
+        <h3 id="result-message"></h3>
+
+        <button id="retry-btn">Try Again</button>
+    </div>
+
+
+    <br>
+    <div class="history">
+        <h4>Personal best</h4>
+        <button id="clear-history-btn">Clear History</button>
+
+        <p id="easy-best">Easy: 0 WPM</p>
+        <p id="medium-best">Medium: 0 WPM</p>
+        <p id="hard-best">Hard: 0 WPM</p>
+
+        <div class="history-contents">
+            <table>
+                <th>WPM</th>
+                <th>Accuracy</th>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
