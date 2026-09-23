@@ -95,7 +95,7 @@ mediumButton.addEventListener("click", () => {
 hardButton.addEventListener("click", () => {
     currentDifficulty = "hard";
     timerSelect.disabled = false;
-    inputMessage.textContent = "Select a timer to start typing !!!";   
+    inputMessage.textContent = "Select a timer to start typing !!!";
     getPassage("hard");
 
 })
