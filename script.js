@@ -79,8 +79,17 @@ let currentDifficulty = null;
 
 let retryButton = document.querySelector("#retry-btn");
 
+function setActiveDifficulty(button) {
+    easyButton.classList.remove("active");
+    mediumButton.classList.remove("active");
+    hardButton.classList.remove("active");
+
+    button.classList.add("active");
+}
+
 easyButton.addEventListener("click", () => {
     currentDifficulty = "easy";
+    setActiveDifficulty(easyButton);
     timerSelect.disabled = false;
     inputMessage.textContent = "Select a timer to start typing.";
     getPassage("easy");
@@ -89,6 +98,7 @@ easyButton.addEventListener("click", () => {
 
 mediumButton.addEventListener("click", () => {
     currentDifficulty = "medium";
+    setActiveDifficulty(mediumButton);
     timerSelect.disabled = false;
     inputMessage.textContent = "Select a timer to start typing.";
     getPassage("medium");
@@ -98,6 +108,7 @@ mediumButton.addEventListener("click", () => {
 
 hardButton.addEventListener("click", () => {
     currentDifficulty = "hard";
+    setActiveDifficulty(hardButton);
     timerSelect.disabled = false;
     inputMessage.textContent = "Select a timer to start typing !!!";
     getPassage("hard");
