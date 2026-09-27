@@ -145,7 +145,7 @@ body {
 
     background: #1b1b1b;
 
-    
+
 }
 
 .display-content {
@@ -342,12 +342,13 @@ body {
         padding: 8px 14px;
         font-size: 0.9rem;
     }
-    
-    #clear-history-btn{
+
+    #clear-history-btn {
         padding: 8px 4px;
         font-size: 0.9rem;
     }
-    #retry-btn{
+
+    #retry-btn {
         padding: 8px 14px;
         font-size: 0.9rem;
     }
@@ -411,7 +412,7 @@ body {
 }
 
 #timer-select:focus {
-   outline: 1px solid #555b66;
+    outline: 1px solid #555b66;
     outline-offset: 2px;
 }
 
@@ -428,6 +429,6 @@ body {
 }
 
 #text-box:disabled {
-    opacity: 0.6;
+    opacity: 0;
     cursor: not-allowed;
 }

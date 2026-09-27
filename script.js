@@ -313,6 +313,12 @@ textBox.disabled = true;
 secondsDisplay.textContent = second;
 timerSelect.disabled = true;
 
+displayArea.addEventListener("click", () => {
+    if (!textBox.disabled) {
+        textBox.focus();
+    }
+});
+
 textBox.addEventListener("input", () => {
     let spans = displayArea.querySelectorAll("span");
     let typedText = textBox.value.split("");
