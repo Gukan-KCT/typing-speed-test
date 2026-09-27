@@ -275,6 +275,16 @@ function resetTest() {
     liveWPM.textContent = "0 WPM";
     interval = null;
     passageSelected = false;
+
+    if (currentDifficulty === "easy") {
+        setActiveDifficulty(easyButton);
+    }
+    else if (currentDifficulty === "medium") {
+        setActiveDifficulty(mediumButton);
+    }
+    else if (currentDifficulty === "hard") {
+        setActiveDifficulty(hardButton);
+    }
 }
 
 

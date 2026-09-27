@@ -108,7 +108,7 @@ body {
     align-items: baseline;
     gap: 8px;
 
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .timer-area h2 {
@@ -405,7 +405,7 @@ body {
 }
 
 #timer-select:focus {
-    outline: 2px solid #4dabf7;
+   outline: 1px solid #555b66;
     outline-offset: 2px;
 }
 
