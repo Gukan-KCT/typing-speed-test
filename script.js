@@ -61,6 +61,10 @@ async function getPassage(difficulty) {
         if (data.quote.length >= minLength && data.quote.length <= maxLength) {
             displayCharacters(data.quote);
             passageSelected = true;
+
+            textBox.disabled = false;
+            inputMessage.textContent = "";
+
             break;
         }
     }
@@ -167,6 +171,8 @@ function finishTest(interval) {
     };
 
     let results = JSON.parse(localStorage.getItem("typingResults")) || [];
+    console.log(results);
+    console.log(JSON.stringify(results));
     results.push(result);
     localStorage.setItem("typingResults", JSON.stringify(results));
     loadHistory();
@@ -247,7 +253,6 @@ function resetTest() {
         clearInterval(interval);
     }
     textBox.disabled = true;
-    timerSelect.disabled = false;
     timerSelect.disabled = false;
     textBox.value = "";
     startflag = false;
